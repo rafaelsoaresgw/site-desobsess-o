@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Estudos Espíritas - Desobsessão e Luz</title>
+    <meta name="description" content="Portal profissional de estudos espíritas, oferecendo livros e apostilas para a classe de Desobsessão. Acesse materiais educativos completos para sua jornada de luz.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="script.js" defer></script>
+</head>
+<body style="background-color: #211e52;"> 
+
+    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 bg-[#211e52] shadow-2xl z-[100] transform -translate-x-full transition-transform duration-300 md:hidden">
+        
+        <div class="p-4 border-b border-indigo-800/50 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-indigo-400"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg>
+                <span class="text-lg font-semibold text-white">Estudos Espíritas</span>
+            </div>
+            <button id="close-menu-button" class="text-gray-300 hover:text-white transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+            </button>
+        </div>
+
+        <nav class="flex flex-col p-4 space-y-4">
+            <a href="#home" class="text-gray-300 hover:text-indigo-400 transition-colors border-b border-indigo-800/50 pb-2">Início</a>
+            <a href="#books" class="text-gray-300 hover:text-indigo-400 transition-colors border-b border-indigo-800/50 pb-2">Livros</a>
+            <a href="#apostilas" class="text-gray-300 hover:text-indigo-400 transition-colors border-b border-indigo-800/50 pb-2">Apostilas</a>
+            <a href="#contact" class="text-gray-300 hover:text-indigo-400 transition-colors border-b border-indigo-800/50 pb-2">Contato</a>
+        </nav>
+    </div>
+    <div id="root">
+        <div class="min-h-screen flex flex-col">
+            
+            <header class="bg-slate-900/95 backdrop-blur-sm border-b border-indigo-800/30 sticky top-0 z-50">
+                <nav class="container mx-auto px-4 py-4">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-indigo-400"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                            <span class="text-xl font-semibold text-white">Estudos Espíritas</span>
+                        </div>
+                        <div class="hidden md:flex items-center space-x-8">
+                            <button class="text-gray-300 hover:text-indigo-400 transition-colors">Início</button>
+                            <button class="text-gray-300 hover:text-indigo-400 transition-colors">Livros</button>
+                            <button class="text-gray-300 hover:text-indigo-400 transition-colors">Apostilas</button>
+                            <button class="text-gray-300 hover:text-indigo-400 transition-colors">Contato</button>
+                        </div>
+                        <button id="open-menu-button" class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10 md:hidden text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+                        </button>
+                    </div>
+                </nav>
+            </header>
+            
+            <main class="flex-grow">
+                <section id="home" class="relative py-20 px-4 overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-b from-indigo-900/20 to-transparent"></div>
+                    <div class="container mx-auto max-w-4xl relative z-10">
+                        <div class="text-center space-y-6">
+                            <div class="flex justify-center mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-16 h-16 text-indigo-400"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path><path d="M5 3v4"></path><path d="M19 17v4"></path><path d="M3 5h4"></path><path d="M17 19h4"></path></svg>
+                            </div>
+                            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">Classe de Estudo: Libertação e Desobsessão</h1>
+                            <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">Bem-vindo(a) à sua jornada de elevação espiritual. Acesse materiais de estudo, livros e apostilas abrangentes para guiá-lo no processo de libertação e encontro com a luz.</p>
+                            <div class="pt-4">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="books" class="py-16 px-4 bg-slate-800/30">
+                    <div class="container mx-auto max-w-7xl">
+                        <div class="text-center mb-12">
+                            <div class="flex justify-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12 text-indigo-400"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                            </div>
+                            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Biblioteca de Livros Espíritas</h2>
+                            <p class="text-gray-300 max-w-2xl mx-auto">Explore nossa coleção de obras selecionadas sobre desobsessão e esclarecimento espiritual.</p>
+                        </div>
+                        <div class="max-w-2xl mx-auto mb-12">
+                            <div class="relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+                                <input type="text" placeholder="Buscar livros por título, autor ou categoria..." class="search-input w-full pl-12 pr-4 py-3 bg-slate-900/50 border border-indigo-800/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus-visible:ring-indigo-500 transition-all" value="">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div class="book-card bg-slate-900/50 border border-indigo-800/30 rounded-lg p-6 hover:border-indigo-600/50 transition-all hover:shadow-lg hover:shadow-indigo-900/20 group">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="bg-indigo-900/30 p-3 rounded-lg group-hover:bg-indigo-800/40 transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-indigo-400"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                                    </div>
+                                    <span class="text-xs px-3 py-1 bg-indigo-900/50 text-indigo-300 rounded-full">Fundamentos</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-white mb-2 group-hover:text-indigo-300 transition-colors">O Caminho para a Liberdade Espiritual</h3>
+                                <p class="text-sm text-gray-400 mb-3">por Dra. Maria Santos</p>
+                                <p class="text-gray-300 mb-6 leading-relaxed">Um guia completo para entender e vencer as obsessões espirituais através da meditação e autoconhecimento.</p>
+                                <button class="download-button inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 w-full bg-indigo-600 hover:bg-indigo-700 text-white transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>Baixar Livro
+                                </button>
+                            </div>
+                            <div class="book-card bg-slate-900/50 border border-indigo-800/30 rounded-lg p-6 hover:border-indigo-600/50 transition-all hover:shadow-lg hover:shadow-indigo-900/20 group">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="bg-indigo-900/30 p-3 rounded-lg group-hover:bg-indigo-800/40 transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-indigo-400"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                                    </div>
+                                    <span class="text-xs px-3 py-1 bg-indigo-900/50 text-indigo-300 rounded-full">Avançado</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-white mb-2 group-hover:text-indigo-300 transition-colors">A Libertação da Alma</h3>
+                                <p class="text-sm text-gray-400 mb-3">por Padre João Silva</p>
+                                <p class="text-gray-300 mb-6 leading-relaxed">Explore a sabedoria ancestral e técnicas modernas para a limpeza e proteção espiritual.</p>
+                                <button class="download-button inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 w-full bg-indigo-600 hover:bg-indigo-700 text-white transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>Baixar Livro
+                                </button>
+                            </div>
+                            <div class="book-card bg-slate-900/50 border border-indigo-800/30 rounded-lg p-6 hover:border-indigo-600/50 transition-all hover:shadow-lg hover:shadow-indigo-900/20 group">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="bg-indigo-900/30 p-3 rounded-lg group-hover:bg-indigo-800/40 transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-indigo-400"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                                    </div>
+                                    <span class="text-xs px-3 py-1 bg-indigo-900/50 text-indigo-300 rounded-full">Intermediário</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-white mb-2 group-hover:text-indigo-300 transition-colors">Compreendendo as Influências Espirituais</h3>
+                                <p class="text-sm text-gray-400 mb-3">por Dra. Ana Costa</p>
+                                <p class="text-gray-300 mb-6 leading-relaxed">Aprenda a identificar e abordar várias formas de interferência espiritual no dia a dia.</p>
+                                <button class="download-button inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 w-full bg-indigo-600 hover:bg-indigo-700 text-white transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>Baixar Livro
+                                </button>
+                            </div>
+                            <div class="book-card bg-slate-900/50 border border-indigo-800/30 rounded-lg p-6 hover:border-indigo-600/50 transition-all hover:shadow-lg hover:shadow-indigo-900/20 group">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="bg-indigo-900/30 p-3 rounded-lg group-hover:bg-indigo-800/40 transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-indigo-400"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                                    </div>
+                                    <span class="text-xs px-3 py-1 bg-indigo-900/50 text-indigo-300 rounded-full">Prática</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-white mb-2 group-hover:text-indigo-300 transition-colors">Meditação para a Defesa Espiritual</h3>
+                                <p class="text-sm text-gray-400 mb-3">por Mestre Paulo Oliveira</p>
+                                <p class="text-gray-300 mb-6 leading-relaxed">Técnicas práticas de meditação para fortalecer suas defesas espirituais e paz interior.</p>
+                                <button class="download-button inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 w-full bg-indigo-600 hover:bg-indigo-700 text-white transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>Baixar Livro
+                                </button>
+                            </div>
+                            <div class="book-card bg-slate-900/50 border border-indigo-800/30 rounded-lg p-6 hover:border-indigo-600/50 transition-all hover:shadow-lg hover:shadow-indigo-900/20 group">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="bg-indigo-900/30 p-3 rounded-lg group-hover:bg-indigo-800/40 transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-indigo-400"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                                    </div>
+                                    <span class="text-xs px-3 py-1 bg-indigo-900/50 text-indigo-300 rounded-full">Pesquisa</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-white mb-2 group-hover:text-indigo-300 transition-colors">A Ciência da Cura Espírita</h3>
+                                <p class="text-sm text-gray-400 mb-3">por Dr. Carlos Mendes</p>
+                                <p class="text-gray-300 mb-6 leading-relaxed">Conectando ciência e espiritualidade no tratamento de quadros obsessivos complexos.</p>
+                                <button class="download-button inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 w-full bg-indigo-600 hover:bg-indigo-700 text-white transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>Baixar Livro
+                                </button>
+                            </div>
+                            <div class="book-card bg-slate-900/50 border border-indigo-800/30 rounded-lg p-6 hover:border-indigo-600/50 transition-all hover:shadow-lg hover:shadow-indigo-900/20 group">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="bg-indigo-900/30 p-3 rounded-lg group-hover:bg-indigo-800/40 transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-indigo-400"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                                    </div>
+                                    <span class="text-xs px-3 py-1 bg-indigo-900/50 text-indigo-300 rounded-full">Prática</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-white mb-2 group-hover:text-indigo-300 transition-colors">Preces Diárias de Proteção</h3>
+                                <p class="text-sm text-gray-400 mb-3">por Irmã Teresa Lima</p>
+                                <p class="text-gray-300 mb-6 leading-relaxed">Uma coletânea de preces e afirmações poderosas para a proteção espiritual diária e harmonização.</p>
+                                <button class="download-button inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 w-full bg-indigo-600 hover:bg-indigo-700 text-white transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>Baixar Livro
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="apostilas" class="py-16 px-4">
+                    <div class="container mx-auto max-w-7xl">
+                        <div class="text-center mb-12">
+                            <div class="flex justify-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12 text-indigo-400"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" x2="8" y1="13" y2="13"></line><line x1="16" x2="8" y1="17" y2="17"></line><line x1="10" x2="8" y1="9" y2="9"></line></svg>
+                            </div>
+                            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Apostilas de Estudo</h2>
+                            <p class="text-gray-300 max-w-2xl mx-auto">Materiais de estudo e planos de aula estruturados para o aprendizado espiritual.</p>
+                        </div>
+                        <div class="max-w-2xl mx-auto mb-12">
+                            <div class="relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+                                <input type="text" placeholder="Buscar apostilas por título ou nível..." class="search-input w-full pl-12 pr-4 py-3 bg-slate-900/50 border border-indigo-800/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus-visible:ring-indigo-500 transition-all" value="">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div class="apostila-card bg-slate-900/50 border border-indigo-800/30 rounded-lg p-6 hover:border-indigo-600/50 transition-all hover:shadow-lg hover:shadow-indigo-900/20 group">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="bg-indigo-900/30 p-3 rounded-lg group-hover:bg-indigo-800/40 transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-indigo-400"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" x2="8" y1="13" y2="13"></line><line x1="16" x2="8" y1="17" y2="17"></line><line x1="10" x2="8" y1="9" y2="9"></line></svg>
+                                    </div>
+                                    <span class="text-xs px-3 py-1 rounded-full bg-green-900/50 text-green-300">Iniciante</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-white mb-3 group-hover:text-indigo-300 transition-colors">Introdução à Obsessão Espiritual</h3>
+                                <p class="text-gray-300 mb-4 leading-relaxed">Conceitos fundamentais e terminologia para o entendimento dos fenômenos obsessivos.</p>
+                                <div class="flex items-center text-sm text-gray-400 mb-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg><span>8 Lições</span>
+                                </div>
+                                <button class="view-button inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 w-full bg-indigo-600 hover:bg-indigo-700 text-white transition-colors">Ver Apostila</button>
+                            </div>
+                            <div class="apostila-card bg-slate-900/50 border border-indigo-800/30 rounded-lg p-6 hover:border-indigo-600/50 transition-all hover:shadow-lg hover:shadow-indigo-900/20 group">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="bg-indigo-900/30 p-3 rounded-lg group-hover:bg-indigo-800/40 transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-indigo-400"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" x2="8" y1="13" y2="13"></line><line x1="16" x2="8" y1="17" y2="17"></line><line x1="10" x2="8" y1="9" y2="9"></line></svg>
+                                    </div>
+                                    <span class="text-xs px-3 py-1 rounded-full bg-yellow-900/50 text-yellow-300">Intermediário</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-white mb-3 group-hover:text-indigo-300 transition-colors">Técnicas de Limpeza Espiritual</h3>
+                                <p class="text-gray-300 mb-4 leading-relaxed">Métodos práticos e rituais para purificação espiritual e limpeza energética.</p>
+                                <div class="flex items-center text-sm text-gray-400 mb-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg><span>12 Lições</span>
+                                </div>
+                                <button class="view-button inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 w-full bg-indigo-600 hover:bg-indigo-700 text-white transition-colors">Ver Apostila</button>
+                            </div>
+                            <div class="apostila-card bg-slate-900/50 border border-indigo-800/30 rounded-lg p-6 hover:border-indigo-600/50 transition-all hover:shadow-lg hover:shadow-indigo-900/20 group">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="bg-indigo-900/30 p-3 rounded-lg group-hover:bg-indigo-800/40 transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-indigo-400"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" x2="8" y1="13" y2="13"></line><line x1="16" x2="8" y1="17" y2="17"></line><line x1="10" x2="8" y1="9" y2="9"></line></svg>
+                                    </div>
+                                    <span class="text-xs px-3 py-1 rounded-full bg-red-900/50 text-red-300">Avançado</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-white mb-3 group-hover:text-indigo-300 transition-colors">Métodos Avançados de Proteção</h3>
+                                <p class="text-gray-300 mb-4 leading-relaxed">Técnicas sofisticadas para criação e manutenção de barreiras espirituais.</p>
+                                <div class="flex items-center text-sm text-gray-400 mb-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg><span>10 Lições</span>
+                                </div>
+                                <button class="view-button inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 w-full bg-indigo-600 hover:bg-indigo-700 text-white transition-colors">Ver Apostila</button>
+                            </div>
+                            <div class="apostila-card bg-slate-900/50 border border-indigo-800/30 rounded-lg p-6 hover:border-indigo-600/50 transition-all hover:shadow-lg hover:shadow-indigo-900/20 group">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="bg-indigo-900/30 p-3 rounded-lg group-hover:bg-indigo-800/40 transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-indigo-400"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" x2="8" y1="13" y2="13"></line><line x1="16" x2="8" y1="17" y2="17"></line><line x1="10" x2="8" y1="9" y2="9"></line></svg>
+                                    </div>
+                                    <span class="text-xs px-3 py-1 rounded-full bg-green-900/50 text-green-300">Iniciante</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-white mb-3 group-hover:text-indigo-300 transition-colors">Práticas de Meditação e Concentração</h3>
+                                <p class="text-gray-300 mb-4 leading-relaxed">Técnicas essenciais de meditação para consciência espiritual e paz interior.</p>
+                                <div class="flex items-center text-sm text-gray-400 mb-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg><span>6 Lições</span>
+                                </div>
+                                <button class="view-button inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 w-full bg-indigo-600 hover:bg-indigo-700 text-white transition-colors">Ver Apostila</button>
+                            </div>
+                            <div class="apostila-card bg-slate-900/50 border border-indigo-800/30 rounded-lg p-6 hover:border-indigo-600/50 transition-all hover:shadow-lg hover:shadow-indigo-900/20 group">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="bg-indigo-900/30 p-3 rounded-lg group-hover:bg-indigo-800/40 transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-indigo-400"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" x2="8" y1="13" y2="13"></line><line x1="16" x2="8" y1="17" y2="17"></line><line x1="10" x2="8" y1="9" y2="9"></line></svg>
+                                    </div>
+                                    <span class="text-xs px-3 py-1 rounded-full bg-red-900/50 text-red-300">Avançado</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-white mb-3 group-hover:text-indigo-300 transition-colors">Estudos de Caso em Libertação Espiritual</h3>
+                                <p class="text-gray-300 mb-4 leading-relaxed">Exemplos reais e análises de tratamentos de obsessão espiritual bem-sucedidos.</p>
+                                <div class="flex items-center text-sm text-gray-400 mb-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg><span>15 Lições</span>
+                                </div>
+                                <button class="view-button inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 w-full bg-indigo-600 hover:bg-indigo-700 text-white transition-colors">Ver Apostila</button>
+                            </div>
+                            <div class="apostila-card bg-slate-900/50 border border-indigo-800/30 rounded-lg p-6 hover:border-indigo-600/50 transition-all hover:shadow-lg hover:shadow-indigo-900/20 group">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="bg-indigo-900/30 p-3 rounded-lg group-hover:bg-indigo-800/40 transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-indigo-400"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" x2="8" y1="13" y2="13"></line><line x1="16" x2="8" y1="17" y2="17"></line><line x1="10" x2="8" y1="9" y2="9"></line></svg>
+                                    </div>
+                                    <span class="text-xs px-3 py-1 rounded-full bg-yellow-900/50 text-yellow-300">Intermediário</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-white mb-3 group-hover:text-indigo-300 transition-colors">Fundamentos do Trabalho Energético</h3>
+                                <p class="text-gray-300 mb-4 leading-relaxed">Entendimento e trabalho com os campos de energia espiritual e os chakras.</p>
+                                <div class="flex items-center text-sm text-gray-400 mb-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg><span>9 Lições</span>
+                                </div>
+                                <button class="view-button inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 w-full bg-indigo-600 hover:bg-indigo-700 text-white transition-colors">Ver Apostila</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            
+            <footer id="contact" class="bg-slate-900 border-t border-indigo-800/30 mt-16">
+                <div class="container mx-auto px-4 py-12">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                        <div>
+                            <div class="flex items-center space-x-2 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-indigo-400"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                                <span class="text-lg font-semibold text-white">Estudos Espíritas</span>
+                            </div>
+                            <p class="text-gray-400 leading-relaxed">Dedicado a fornecer educação e recursos espirituais completos para aqueles que buscam a libertação de obsessões.</p>
+                        </div>
+                        <div>
+                            <span class="text-lg font-semibold text-white block mb-4">Links Rápidos</span>
+                            <nav class="space-y-2">
+                                <button class="block text-gray-400 hover:text-indigo-400 transition-colors">Início</button>
+                                <button class="block text-gray-400 hover:text-indigo-400 transition-colors">Livros</button>
+                                <button class="block text-gray-400 hover:text-indigo-400 transition-colors">Apostilas</button>
+                            </nav>
+                        </div>
+                        <div>
+                            <span class="text-lg font-semibold text-white block mb-4">Fale Conosco</span>
+                            <div class="space-y-3">
+                                <button class="flex items-center text-gray-400 hover:text-indigo-400 transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-3"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                                    <span>contato@estudosespiritas.com</span>
+                                </button>
+                                <button class="flex items-center text-gray-400 hover:text-indigo-400 transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-3"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                    <span>+55 (11) 5555-4567</span>
+                                </button>
+                                <button class="flex items-center text-gray-400 hover:text-indigo-400 transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-3"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                    <span>Rua da Luz, 123, Cidade da Paz</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-t border-indigo-800/30 pt-8 text-center">
+                        <p class="text-gray-400">© 2025 Portal de Estudos Espíritas. Todos os direitos reservados. Que a paz guie sua jornada.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
