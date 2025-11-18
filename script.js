@@ -1,21 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 🌟 Lógica do Menu Lateral (Slide-out) 🌟
+    // 🌟 Lógica do Menu Lateral (Slide-out) - AJUSTADO PARA O LADO DIREITO 🌟
     const openMenuButton = document.getElementById('open-menu-button');
     const closeMenuButton = document.getElementById('close-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
 
-    // Função para abrir o menu
+    // Função para abrir o menu (Remover translate-x-full e adicionar translate-x-0)
     const openMenu = () => {
-        mobileMenu.classList.remove('-translate-x-full');
+        mobileMenu.classList.remove('translate-x-full');
         mobileMenu.classList.add('translate-x-0');
         document.body.style.overflow = 'hidden'; // Evita rolagem da página principal
     };
 
-    // Função para fechar o menu
+    // Função para fechar o menu (Remover translate-x-0 e adicionar translate-x-full)
     const closeMenu = () => {
         mobileMenu.classList.remove('translate-x-0');
-        mobileMenu.classList.add('-translate-x-full');
+        mobileMenu.classList.add('translate-x-full');
         document.body.style.overflow = 'auto'; // Restaura a rolagem
     };
 
